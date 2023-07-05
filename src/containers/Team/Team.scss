@@ -1,0 +1,140 @@
+.app__team {
+  width: 90%;
+  margin: 0px auto;
+}
+
+.heading {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 0px;
+  color: #075c35;
+}
+
+.card {
+  width: 20%;
+  background: #fff;
+  border: 1px solid #ccc;
+  margin-bottom: 50px;
+  transition: 0.3s;
+}
+
+.card-header {
+  text-align: center;
+  padding: 50px 10px;
+}
+
+.team-cards {
+  display: flex;
+  justify-content: center;
+}
+
+.team-item {
+  flex: 1 1;
+  background: #f4f5f6;
+  text-align: center;
+  margin: 20px 0;
+  padding: 20px 20px 20px 20px;
+  border-radius: 8px 8px;
+  transition: all 0.25s ease-in-out;
+  max-width: 300px;
+  margin-inline: 10px;
+}
+
+.team-item:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(11, 214, 122, 1) 0%,
+    rgba(33, 170, 107, 1) 35%,
+    rgba(39, 108, 77, 1) 100%
+  );
+  color: white;
+}
+
+.team-item h3 {
+  margin: 10px 0 1px 0 !important;
+  color: #454545;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+}
+
+.team-item:hover h3 {
+  color: #ddd;
+}
+
+.team-item:hover p {
+  color: #ddd;
+}
+
+.team-info {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.team-info p {
+  color: #acacac;
+  font-style: italic;
+}
+
+.team-info::after {
+  vertical-align: middle;
+  content: "";
+  width: 50px;
+  height: 3px;
+}
+
+.team-img {
+  width: 220px;
+  height: 220px;
+  padding: 6px 6px;
+  background-color: #dedede;
+  border-radius: 20px;
+  object-fit: cover;
+  object-position: top;
+}
+
+@media screen and (max-width: 992px) {
+  .app__team {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .app__flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .heading {
+    font-size: 15px;
+    margin-top: 20px;
+  }
+
+  .team-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-item {
+    margin: 10px 0;
+    padding: 10px 10px 10px 10px;
+
+    h3 {
+      margin: 0px 0px;
+    }
+  }
+
+  .team-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .team-info {
+    margin-bottom: 0px;
+  }
+}
